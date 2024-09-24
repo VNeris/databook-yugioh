@@ -18,7 +18,7 @@ const links = [
    },
    {
       label: <FaLinkedin />,
-      url: 'https://www.linkedin.com/in/vinicius-paiva-b49b602b6/'
+      url: 'https://www.linkedin.com/in/vinicius-neris-b49b602b6/'
    },
 ]
 
@@ -27,9 +27,9 @@ function Navbar() {
    const [isOpen, setIsOpen] = useState(false);
 
    return (
-      <nav className="navbar bg-black bg-opacity-90 p-4">
+      <nav className="navbar bg-zinc-900 bg-opacity-90 p-4">
          <div className="container mx-auto flex justify-between items-center">
-            <div className="text-[#c0c0c0] text-3xl font-bold">Yu-Gi-Oh!</div>
+            <div className="text-[#c0c0c0] text-3xl font-bold">Yu-Gi-Oh! DataBook</div>
             <div className="md:hidden">
                <button
                   className="text-white focus:outline-none block"
@@ -56,10 +56,10 @@ function Navbar() {
             </div>
             <div className={`${isOpen ? "block" : "hidden"
                   } md:flex md:flex-col md:space-y-4 md:w-auto`}>
-               <ul className="md:flex items-center md:space-x-10 text-[#c0c0c0] text-3xl">
+               <ul className="sm:flex items-center space-x-5 md:space-x-10 text-[#c0c0c0] text-3xl">
                   {links.map((link, index) => {
                      return (
-                        <li key={index} className="block py-2 md:py-0 hover:text-[#eb4040]">
+                        <li key={index} className="flex items-center justify-end py-2 md:py-0 hover:text-[#eb4040]">
                            <a target="_blank" href={link.url}>
                               {link.label}
                            </a>

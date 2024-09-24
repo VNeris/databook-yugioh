@@ -1,15 +1,14 @@
 import React from 'react';
 import InfiniteScrollSearch from './page/InfiniteScrollSearch'; // Caminho do componente
-
+import Navbar from './components/Navbar';
  
 
 function App() {
   return (
     <>
       <header className="min-h-screen bg-zinc-600 text-white">
-        <nav className="text-center py-6 bg-black bg-opacity-50">
-          <h1 className="text-4xl font-bold">Yu-Gi-Oh! Databook</h1>
-        </nav>
+        
+        <Navbar></Navbar>
         <InfiniteScrollSearch />
 
       </header>
