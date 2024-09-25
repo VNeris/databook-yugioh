@@ -14,7 +14,7 @@ const links = [
    },
    {
       label: <FaWhatsapp />,
-      url: 'Decks'
+      url: 'https://wa.me/977992725'
    },
    {
       label: <FaLinkedin />,

@@ -1,5 +1,5 @@
 import React from 'react';
-import InfiniteScrollSearch from './page/InfiniteScrollSearch'; // Caminho do componente
+import YugiohDatabook from './page/YugiohDatabook'; // Caminho do componente
 import Navbar from './components/Navbar';
  
 
@@ -9,7 +9,7 @@ function App() {
       <header className="min-h-screen bg-zinc-600 text-white">
         
         <Navbar></Navbar>
-        <InfiniteScrollSearch />
+        <YugiohDatabook />
 
       </header>
     </>
